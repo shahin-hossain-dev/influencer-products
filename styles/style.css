@@ -55,6 +55,10 @@ nav {
     font-weight: 600;
 }
 
+.nav-toggle {
+    display: none;
+}
+
 /* banner style */
 
 .banner {
@@ -89,4 +93,37 @@ nav {
     background-image: url('../images/Circle\ design.svg');
     background-repeat: no-repeat;
     background-size: 95%;
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        width: 95%;
+    }
+
+    .banner-title {
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+        font-size: 24px;
+    }
+
+    .nav-toggle a {
+        color: var(--primary-text);
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .banner img {
+        width: 100%;
+    }
 }
