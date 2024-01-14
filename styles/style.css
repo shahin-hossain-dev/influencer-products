@@ -1,2 +1,49 @@
 /* poppins font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sora:wght@400;700&display=swap');
+
+/* shared style */
+:root {
+    --primary-text: #3A3A3A;
+    --secondary-text: #787885;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+/* nav section style */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.site-title {
+    color: var(--primary-text);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-container {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-container li {
+    list-style: none;
+}
+
+.nav-container li a {
+    text-decoration: none;
+    color: var(--primary-text);
+    font-weight: 600;
+}
