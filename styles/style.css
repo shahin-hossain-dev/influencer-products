@@ -105,10 +105,14 @@ nav {
 
 /* popular collection section start */
 .popular-collection {
-    margin: 100px;
+    margin-top: 100px;
 }
 
-.collection-container {}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
 
 .collection-title {
     font-size: 28px;
@@ -124,16 +128,80 @@ nav {
     border-radius: 5px;
 }
 
+.card img {
+    width: 100%;
+}
+
+.card-title {
+    font-size: 28px;
+    font-weight: 500;
+    color: #18191F;
+    margin-bottom: 5px;
+}
+
+.price {
+    margin-bottom: 5px;
+}
+
+.card-info {
+    font-size: 14px;
+    font-weight: 700;
+}
+
 .rating {
     display: flex;
-    gap: 10px
+    gap: 10px;
+    margin-bottom: 5px;
 }
 
 .rating i {
     color: #FB8200;
 }
 
+.see-more {
+    color: #E02C6D;
+    margin-top: 50px;
+    font-weight: 700;
+    text-align: end;
+}
 
+/* feature section style */
+
+.feature-container {
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.feature-img {
+    width: 100%;
+}
+
+.feature-content {}
+
+.feature-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--primary-text);
+    margin-bottom: 16px;
+}
+
+.feature-description {
+    color: var(--secondary-text);
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.btn-feature {
+    background-color: #E02C6D;
+    color: white;
+    padding: 10px 24px;
+    font-weight: 700;
+    border: 0;
+}
+
+
+/* Responsive for mobile devices */
 @media screen and (max-width:576px) {
     .container {
         width: 90%;
@@ -172,6 +240,33 @@ nav {
     .partners {
         gap: 30px;
         flex-wrap: wrap;
+    }
+
+    /* popular collection section */
+    .card-container {
+        grid-template-columns: 1fr;
+
+    }
+
+    /* feature section */
+    .feature-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .feature-content {
+        text-align: center;
+        order: 1;
+        margin-bottom: 40px;
+    }
+
+    .feature-img {
+        order: 2;
+
+    }
+
+    .feature-img img {
+        width: 100%;
     }
 
 }
