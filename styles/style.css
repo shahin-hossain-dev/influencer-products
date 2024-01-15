@@ -146,6 +146,7 @@ nav {
 .card-info {
     font-size: 14px;
     font-weight: 700;
+    color: var(--secondary-text);
 }
 
 .rating {
@@ -200,6 +201,47 @@ nav {
     border: 0;
 }
 
+/* footer section style */
+.footer-container {
+    margin-top: 100px;
+    clip-path: polygon(50% 0, 100% 15%, 100% 100%, 0 100%, 0 15%);
+}
+
+.footer-content {
+    background-color: #0A0826;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.footer-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 17px;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    background-color: #3a38535e;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.social-icons i {
+    font-size: 16px;
+}
 
 /* Responsive for mobile devices */
 @media screen and (max-width:576px) {
